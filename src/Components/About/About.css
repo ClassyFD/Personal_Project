@@ -1,0 +1,70 @@
+.about_section {
+	width: 110%;
+	height: 100vh;
+	background: url('../../Images/about_section_background.jpg') no-repeat center top fixed;
+	background-size: cover;
+}
+.technologies {
+	display:flex;
+	justify-content: center;
+  position: relative;
+  top: 10px;
+	left: 10px;
+	max-width: 85vw;
+	margin: 0 auto;
+	flex-wrap: wrap;
+}
+#HTML {
+background: url('../../Images/HTML.png') no-repeat center center;
+height: 100px;
+width: 100px;
+}
+#CSS {
+background: url('../../Images/CSS.png') no-repeat center center;
+height: 100px;
+width: 100px;
+}
+#ES6 {
+background: url('../../Images/ES6.png') no-repeat center center;
+height: 100px;
+width: 100px;
+}
+#Redux {
+background: url('../../Images/redux.png') no-repeat center center;
+height: 100px;
+width: 100px;
+}
+#GSAP {
+background: url('../../Images/GSAP.png') no-repeat center center;
+height: 100px;
+width: 100px;
+}
+#NodeJS {
+background: url('../../Images/NodeJS.png');
+height: 100px;
+width: 100px;
+}
+#Express {
+background: url('../../Images/Express.jpg');
+height: 100px;
+width: 100px;
+}
+#Stripe {
+background: url('../../Images/Stripe.png');
+height: 100px;
+width: 100px;
+}
+#Auth0 {
+background: url('../../Images/Auth0.png');
+height: 100px;
+width: 100px;
+}
+#Google_Maps_Api {
+background: url('../../Images/Google_Maps.png');
+height: 100px;
+width: 100px;
+}
+#HTML, #CSS, #ES6, #Redux, #GSAP, #NodeJS, #Express, #Stripe, #Auth0, #Google_Maps_Api {
+  background-size: cover;
+  list-style: none;
+}

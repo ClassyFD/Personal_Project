@@ -1,0 +1,6 @@
+.app_bottom_container {
+  display: flex;
+}
+body {
+  overflow: hidden;
+}

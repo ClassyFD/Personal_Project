@@ -1,0 +1,73 @@
+.nav {
+  display: flex;
+  flex-direction: column;
+  width: 315px;
+  opacity: 1;
+  height: 100vh;
+  opacity: 1;
+  position: relative;
+  background: black;
+}
+.nav_link {
+  background: black;
+  color: white;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 425px;
+  height: 94.5px;
+  border: none;
+  text-decoration: none;
+  opacity: 1;
+  text-shadow: 1px 1px 3px #333333, -1px -1px 3px #333333;
+}
+.nav_link:hover {
+  cursor: pointer;
+}
+.a_tag {
+  text-decoration: none;
+}
+.active{
+  margin: 0;
+}
+#about_link {
+ background: url('../../Images/bookmark-1.png') no-repeat center center ;
+ background-size: cover;
+ margin-left:-50px;
+}
+#order_link {
+ background: url('../../Images/bookmark-2.png') no-repeat center center;
+ background-size: cover;
+ width: 460px;
+ margin-left: -50px;
+}
+#contact_link {
+ background: url('../../Images/bookmark-3.png') no-repeat center center;
+ background-size: cover;
+ width: 429px;
+ margin-left: -50px;
+}
+#menu_link {
+ background: url('../../Images/bookmark-4.png') no-repeat center center;
+ background-size: cover;
+ margin-left: -50px;
+ width: 425px;
+}
+#cafes_link {
+ background: url('../../Images/bookmark-5.png') no-repeat center center;
+ background-size: cover;
+ width: 429px;
+ margin-left: -50px;
+}
+#store_link {
+ background: url('../../Images/bookmark-6.png') no-repeat center center;
+ background-size: cover;
+ margin-left: -50px;
+ width: 460px;
+}
+#login_link{
+ background: url('../../Images/bookmark-7.png') no-repeat center center;
+ background-size: cover;
+ margin-left:-50px;
+}
