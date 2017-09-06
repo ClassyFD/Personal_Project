@@ -20,7 +20,11 @@ class About extends Component {
           <div onClick={(e)=>{this.backUp()}} className='deliwin_image'/>
           <h1 className='component_nav_text'>About </h1>
         </nav>
-        <div className='technologies'> 
+        <container className='technologies_title_container'>
+          <h1 className='technologies_title'> Technologies </h1>
+        </container>
+        <div className='separating_line'/>
+        <container className='technologies'> 
           <li id='HTML'></li>
           <li id='CSS'></li>
           <li id='ES6'></li>
@@ -31,7 +35,11 @@ class About extends Component {
           <li id='Stripe'></li>
           <li id='Auth0'></li>
           <li id='Google_Maps_Api'></li>
-        </div>
+        </container>
+        <div className='separating_line' />
+        <container className='technologies_title_container'>
+          <h1 className='technologies_title'> Used </h1>
+        </container>
       </section>
     )
   }
