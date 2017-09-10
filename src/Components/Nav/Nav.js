@@ -52,7 +52,7 @@ class Nav extends Component {
     return(
       <section onMouseEnter={(e)=>{this.hoverNavSection()}} onMouseLeave={(e)=>{this.leaveNavSection(e)}} id='nav_section'>
         <nav className='nav hide_nav'>
-          <Link onClick={(e)=>{this.clickNav(e)}} onMouseEnter={(e)=>{this.hoverNav(e)}} onMouseLeave={(e)=>{this.leaveNav(e)}} id='about_link' className='nav_link' to='/'>About</Link>
+          <Link onClick={(e)=>{this.clickNav(e)}} onMouseEnter={(e)=>{this.hoverNav(e)}} onMouseLeave={(e)=>{this.leaveNav(e)}} id='about_link' className='nav_link' to='/About'>About</Link>
           <Link onClick={(e)=>{this.clickNav(e)}} onMouseEnter={(e)=>{this.hoverNav(e)}} onMouseLeave={(e)=>{this.leaveNav(e)}} id='order_link' className='nav_link' to='/Order'>Order Now</Link>
           <Link onClick={(e)=>{this.clickNav(e)}} onMouseEnter={(e)=>{this.hoverNav(e)}} onMouseLeave={(e)=>{this.leaveNav(e)}} id='contact_link' className='nav_link' to='/Contact'>Contact</Link>
           <Link onClick={(e)=>{this.clickNav(e)}} onMouseEnter={(e)=>{this.hoverNav(e)}} onMouseLeave={(e)=>{this.leaveNav(e)}} id='menu_link' className='nav_link' to='/Menu'>Menu</Link>

@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux'
-import { Power4, TimelineMax } from 'gsap'
-import './Contact.css'
+import { connect } from 'react-redux';
+import { Power4, TimelineMax } from 'gsap';
+import ContactCard from './SubComponents/ContactCard';
+import ContactForm from './SubComponents/ContactForm';
+import { Switch, Route } from 'react-router';
+import { Link } from 'react-router-dom';
+import './Contact.css';
 
 class Contact extends Component {
   componentDidMount(){
@@ -19,8 +23,17 @@ class Contact extends Component {
       <section className='contact_section'>
         <nav className='component_nav'>
           <div onClick={(e)=>{this.backUp()}} className='deliwin_image'/>
-          <h1 className='component_nav_text'>Contact </h1>
+          <Link className='component_nav_contact_card' to='/Contact'>
+            <h1 className='component_nav_text'> Card </h1>
+          </Link>
+          <Link className='component_nav_contact_form' to='/Contact/Form'>
+            <h1 className='component_nav_text'> Form </h1>
+          </Link>
         </nav>
+        <Switch>
+          <Route exact path='/Contact' component={ContactCard}/>
+          <Route path='/Contact/Form' component={ContactForm}/>
+        </Switch>
       </section>
     )
   }

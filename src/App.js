@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Switch, Route } from 'react-router-dom'
+import { Switch, Route, Redirect } from 'react-router-dom'
 import Nav from './Components/Nav/Nav'
 import Main from './Components/Main/Main'
 import About from './Components/About/About'
@@ -19,7 +19,12 @@ class App extends Component {
         <container className='app_bottom_container'>
           <Nav/>
           <Switch>
-            <Route exact path='/' component={About}/>
+            <Route exact path='/' render={()=>{
+              return (
+                <Redirect to='/About'/>
+              )
+            }} />
+            <Route path='/About' component={About}/>
             <Route path='/Order' component={Order}/>
             <Route path='/Contact' component={Contact}/>
             <Route path='/Menu' component={Menu}/>

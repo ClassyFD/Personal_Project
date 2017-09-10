@@ -17,7 +17,7 @@ class Main extends Component {
   render(){
     return (
       <section id='main_section' onClick={(e)=>{this.startPageAnimation()}} className='main_section'>
-        <h1 id='deliwin' className='deliwin'> Deliwin <span id='start_arrow'> > </span></h1>
+        <h1 id='deliwin' className='deliwin'> DeliWin <span id='start_arrow'> > </span></h1>
         <p id='cafe' className='cafe'> Cafe </p>
       </section>
     )

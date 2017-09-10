@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux'
 import { Power4, TimelineMax } from 'gsap'
+import axios from 'axios'
 import './Menu.css';
 
 class Menu extends Component {
@@ -8,6 +9,12 @@ class Menu extends Component {
     this.props.dispatch({
       type: 'MOUNT_COMPONENT',
       value: 'menu_link'
+    })
+    this.createMenu()
+  }
+  createMenu(){
+    axios.get('http://localhost:3001/getMenu').then((res)=>{
+
     })
   }
   backUp(){

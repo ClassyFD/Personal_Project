@@ -1,4 +1,69 @@
 .contact_section {
-	width: 100%;
+	width: 110%;
 	height: 100vh;
+	background: url('../../Images/maps_section_background.jpg') no-repeat center center;
+	background-size: cover;
+
+}
+.contact_form_section {
+	margin: 50px auto;
+	max-width: 60vw;
+	background: #333333;
+	opacity: .98;
+	border: #222222 groove 10px;
+	border-radius: 20px;
+}
+.contact_form_parent {
+	display: flex;
+	justify-content: space-around;
+	padding: 20px;
+	flex-wrap: wrap;
+	text-align: center;
+	max-width: 50vw;
+	margin: 0 auto;
+}
+.contact_form_input_name, .contact_form_input_email {
+	width: 300px;
+}
+.contact_form_textarea_reason {
+	max-width: 50vw;
+}
+.component_nav_contact_card, .component_nav_contact_form {
+	text-decoration: none;
+	color: black;
+}
+.parallax_hover {
+	margin: 150px auto;
+	display: flex;
+	border: none;
+	box-shadow: none;
+	width: 500px;
+	height: 280px;
+}
+.parallax_inside_hover {
+	width: 100%;
+	height: 280px;
+	background: url('../../Images/coffee_card.jpg') no-repeat center center;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.parallax_inside_image {
+	background: url('../../Images/Deliwin.png') no-repeat center center;
+	background-size: cover;
+	width: 220px;
+	height: 160px;
+}
+.contact_list {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 13px;
+	font-family: 'Acme', sans-serif;
+	text-shadow: 1px 1px 1px white, -1px -1px 3px white;
+	list-style: none;
+	width: 200px;
+	height: 100px;
 }

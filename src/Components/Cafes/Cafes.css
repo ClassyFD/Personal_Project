@@ -20,7 +20,7 @@
 .cafes_section {
 	width: 110%;
 	height: 100vh;
-	background: url('../../Images/maps_section_background.jpg') no-repeat center center fixed;
+	background: url('../../Images/maps_section_background.jpg') no-repeat center center;
 	background-size: cover;
 }
 .component_nav {

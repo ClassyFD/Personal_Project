@@ -22,6 +22,9 @@ app.use(session({
   saveUninitialized: true
 }))
 
+
+
+
 //here starts the auth0 stuff.
 app.use(passport.initialize());
 app.use(passport.session());
