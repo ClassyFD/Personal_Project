@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
-import { connect } from 'react-redux'
-import { Power4, TimelineMax } from 'gsap'
+import { connect } from 'react-redux';
+import { Power4, TimelineMax } from 'gsap';
+import axios from 'axios';
 import './Order.css';
 
 class Order extends Component {
@@ -8,7 +9,7 @@ class Order extends Component {
     this.props.dispatch({
       type: 'MOUNT_COMPONENT',
       value: 'order_link'
-    })
+    });
   }
   backUp(){
     let tl = new TimelineMax();
@@ -21,6 +22,9 @@ class Order extends Component {
           <div onClick={(e)=>{this.backUp()}} className='deliwin_image'/>
           <h1 className='component_nav_text'>Order </h1>
         </nav>
+        <container>
+          
+        </container>
       </section>
     )
   }

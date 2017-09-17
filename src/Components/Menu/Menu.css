@@ -3,4 +3,302 @@
 	height: 100vh;
 	background: url('../../Images/maps_section_background.jpg') no-repeat center center;
 	background-size: cover;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+.add_to_cart {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 120px;
+	height: 30px;
+}
+.shopping_cart_icon {
+	cursor: pointer;
+	background: url('../../Images/Icons/add_to_cart_icon.png') no-repeat center center;
+	background-size: cover; 
+	width: 100px;
+	height: 30px;
+}
+.sandwiches, .sides, .drinks, .bread, .sauces{
+	width: 130px;
+	height: 90px;
+	background: no-repeat center center;
+	background-size: cover;
+	border-bottom: 3px ridge #113131;
+}
+.sandwiches_container, .sides_container, .drinks_container, .bread_container, .sauces_container{
+	width: 230px;
+	height: 200px;
+	padding: 10px;
+	background: url('../../Images/Table.jpg') no-repeat center center;
+	background-size: cover;
+	border: 3px ridge #113131;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.info_sandwich_container, .info_sides_container, .info_drinks_container, .info_bread_container, .info_sauces_container {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	text-align: center;
+	height: 60px;
+	align-items: center;
+	justify-content: center;
+}
+.menu_container {
+	width: 724px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+.food {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	justify-content: center;
+	align-items: center;
+}
+.food_nav {
+	display:flex;
+	flex-direction: column;
+}
+.food_nav_options li{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100px;
+	width: 100px;
+	list-style: none;
+	background: gray;
+	text-align: center;
+	border: 3px ridge #113131;
+	cursor: pointer;
+}
+.food_nav_options {
+	display:flex;
+	flex-direction: column;
+}
+.sandwich_icon {
+	background: url('../../Images/Icons/sandwich_icon.png') no-repeat center center gray;
+}
+.bread_icon {
+	background: url('../../Images/Icons/bread_icon.png') no-repeat center center gray;
+}
+.side_icon {
+	background: url('../../Images/Icons/fries_icon.png') no-repeat center center gray;
+}
+.drink_icon {
+	background: url('../../Images/Icons/drink_icon.png') no-repeat center center gray;
+}
+.sauce_icon {
+	background: url('../../Images/Icons/sauce_icon.png') no-repeat center center gray;
+}
+.sandwich_icon, .bread_icon, .side_icon, .drink_icon, .sauce_icon {
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100px;
+	width: 100px;
+	list-style: none;
+	border: 3px ridge #113131;
+}
+#Sandwiches_1 {
+	background: url('../../Images/Sandwiches/french_dip.png') no-repeat center center;
+}
+#Sandwiches_2 {
+	background: url('../../Images/Sandwiches/club.png') no-repeat center center;
+}
+#Sandwiches_3 {
+	background: url('../../Images/Sandwiches/philly_cheesesteak.png') no-repeat center center;
+}
+#Sandwiches_4 {
+	background: url('../../Images/Sandwiches/grilled_chicken.png') no-repeat center center;
+}
+#Sandwiches_5 {
+	background: url('../../Images/Sandwiches/blt.png') no-repeat center center;
+}
+#Sandwiches_6 {
+	background: url('../../Images/Sandwiches/ham_and_cheese.png') no-repeat center center;
+}
+#Sandwiches_7 {
+	background: url('../../Images/Sandwiches/crispy_chicken.png') no-repeat center center;
+}
+#Sandwiches_8 {
+	background: url('../../Images/Sandwiches/grilled_cheese.png') no-repeat center center;
+}
+#Sandwiches_1, #Sandwiches_2, #Sandwiches_3, #Sandwiches_4, #Sandwiches_5, #Sandwiches_6, #Sandwiches_7, #Sandwiches_8 {
+	background-size: cover;
+	height: 100px;
+	width: 150px;
+}
+
+/* hispanic bread */
+#Bread_1 {
+	background: url('../../Images/Bread/concha.png') no-repeat center center;
+}
+#Bread_2 {
+	background: url('../../Images/Bread/cuerno.png') no-repeat center center;
+}
+#Bread_3 {
+	background: url('../../Images/Bread/elotito.png') no-repeat center center;
+}
+#Bread_4 {
+	background: url('../../Images/Bread/empanada.png') no-repeat center center;
+}
+#Bread_5 {
+	background: url('../../Images/Bread/galleta.png') no-repeat center center;
+}
+#Bread_6 {
+	background: url('../../Images/Bread/ojo_de_buey.png') no-repeat center center;
+}
+#Bread_7 {
+	background: url('../../Images/Bread/oreja.png') no-repeat center center;
+}
+#Bread_8 {
+	background: url('../../Images/Bread/polvoron.png') no-repeat center center;
+}
+
+/* vietnamese bread */
+
+#Bread_9 {
+	background: url('../../Images/Bread/red_bean_bun.png') no-repeat center center;
+}
+#Bread_10 {
+	background: url('../../Images/Bread/coconut_tart.png') no-repeat center center;
+}
+#Bread_11 {
+	background: url('../../Images/Bread/vanilla_buttercream.png') no-repeat center center;
+}
+#Bread_12 {
+	background: url('../../Images/Bread/chocolate_buttercream.png') no-repeat center center;
+}
+#Bread_13 {
+	background: url('../../Images/Bread/spring_onion_hotdog.png') no-repeat center center;
+}
+#Bread_14 {
+	background: url('../../Images/Bread/spring_onion_bun.png') no-repeat center center;
+}
+#Bread_15 {
+	background: url('../../Images/Bread/custard_bun.png') no-repeat center center;
+}
+#Bread_16 {
+	background: url('../../Images/Bread/lotus_pastry.png') no-repeat center center;
+}
+#Bread_17 {
+	background: url('../../Images/Bread/pineapple_pastry.png') no-repeat center center;
+}
+#Bread_18 {
+	background: url('../../Images/Bread/red_bean_pastry.png') no-repeat center center;
+}
+#Bread_19 {
+	background: url('../../Images/Bread/taro_pastry.png') no-repeat center center;
+}	
+#Bread_1, #Bread_2, #Bread_3, #Bread_4, #Bread_5, #Bread_6, #Bread_7, #Bread_8, #Bread_9, #Bread_10,
+#Bread_11, #Bread_12, #Bread_13, #Bread_14, #Bread_15, #Bread_16, #Bread_17, #Bread_18, #Bread_19 {
+	background-size: cover;
+	height: 100px;
+	width: 150px;
+}
+#Sides_1 {
+	background: url('../../Images/Sides/fries.png') no-repeat center center;
+}
+#Sides_2 {
+	background: url('../../Images/Sides/onion_ring.png') no-repeat center center;
+}
+#Sides_3 {
+	background: url('../../Images/Sides/tater_tots.png') no-repeat center center;
+}
+#Sides_4 {
+	background: url('../../Images/Sides/cookie.png') no-repeat center center;
+}
+#Sides_5 {
+	background: url('../../Images/Sides/chips.png') no-repeat center center;
+}
+#Sides_6 {
+	background: url('../../Images/Sides/curly_fries.png') no-repeat center center;
+}
+#Sides_7 {
+	background: url('../../Images/Sides/waffle_fries.png') no-repeat center center;
+}
+#Sides_8 {
+	background: url('../../Images/Sides/sweet_potato_fries.png') no-repeat center center;
+}
+#Sides_1, #Sides_2, #Sides_3, #Sides_4, #Sides_5, #Sides_6, #Sides_7, #Sides_8 {
+	background-size: cover;
+	height: 100px;
+	width: 150px;
+}
+#Drinks_1 {
+	background: url('../../Images/Drinks/coke.png') no-repeat center center;
+}
+#Drinks_2 {
+	background: url('../../Images/Drinks/sprite.png') no-repeat center center;
+}
+#Drinks_3 {
+	background: url('../../Images/Drinks/fanta.png') no-repeat center center;
+}
+#Drinks_4 {
+	background: url('../../Images/Drinks/root_beer.png') no-repeat center center;
+}
+#Drinks_5 {
+	background: url('../../Images/Drinks/mountain_dew.png') no-repeat center center;
+}
+#Drinks_6 {
+	background: url('../../Images/Drinks/dr_pepper.png') no-repeat center center;
+}
+#Drinks_7 {
+	background: url('../../Images/Drinks/hi_c.png') no-repeat center center;
+}
+#Drinks_8 {
+	background: url('../../Images/Drinks/green_tea.png') no-repeat center center;
+}
+#Drinks_9 {
+	background: url('../../Images/Drinks/sweet_tea.png') no-repeat center center;
+}
+#Drinks_10 {
+	background: url('../../Images/Drinks/unsweet_tea.png') no-repeat center center;
+}
+#Drinks_11 {
+	background: url('../../Images/Drinks/roast_coffee.png') no-repeat center center;
+}
+#Drinks_12 {
+	background: url('../../Images/Drinks/cappuccino.png') no-repeat center center;
+}
+#Drinks_13 {
+	background: url('../../Images/Drinks/latte.png') no-repeat center center;
+}
+#Drinks_14 {
+	background: url('../../Images/Drinks/hot_chocolate.png') no-repeat center center;
+}
+#Drinks_15 {
+	background: url('../../Images/Drinks/milk.png') no-repeat center center;
+}
+#Drinks_16 {
+	background: url('../../Images/Drinks/frappe.png') no-repeat center center;
+}
+#Drinks_17 {
+	background: url('../../Images/Drinks/iced_coffee.png') no-repeat center center;
+}
+#Drinks_18 {
+	background: url('../../Images/Drinks/iced_tea.png') no-repeat center center;
+}
+#Drinks_19 {
+	background: url('../../Images/Drinks/bubble_tea.png') no-repeat center center;
+}
+#Drinks_20 {
+	background: url('../../Images/Drinks/float.png') no-repeat center center;
+}
+#Drinks_11, #Drinks_12, #Drinks_13, #Drinks_14 {
+	background-size: cover;
+	height: 100px;
+	width: 150px;
+}
+#Drinks_1, #Drinks_2, #Drinks_3, #Drinks_4, #Drinks_5, #Drinks_6, #Drinks_7, #Drinks_8, #Drinks_9, #Drinks_10, #Drinks_19, #Drinks_17, #Drinks_16, #Drinks_15, #Drinks_18, #Drinks_20 {
+	background-size: cover;
+	height: 115px;
+	width: 70px;
 }

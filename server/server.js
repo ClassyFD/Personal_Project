@@ -9,20 +9,109 @@ const express = require('express'),
       passport = require('passport'),
       Auth0Strategy = require('passport-auth0'),
       session = require('express-session'),
+      massive = require('massive'),
       app = express();
 
 //Middleware
-app.use(cors());
 app.use(bodyParser.json());
+app.use(cors());
+
+massive({
+  host: 'ec2-23-23-220-163.compute-1.amazonaws.com',
+  port: 5432,
+  database: 'dfcvtg2jnfuaht',  
+  user: 'ltjwbbapdbrjpu',
+  password: 'b51868fe1afae27332ad0ac6bef82722cf4dce6624e8dfbf759aee0a09227b51',
+  ssl:true,
+}).then((db)=>{
+  app.set('db', db);
+})
+
+app.get('/getSandwiches', (req, res)=>{
+  let db = app.get('db');
+  db.getSandwiches().then((sandwiches)=>{
+    res.status(200).send(sandwiches);
+  });
+});
+app.get('/getSides', (req, res)=>{
+  let db = app.get('db');
+  db.getSides().then((sides)=>{
+    res.status(200).send(sides);
+  });
+});
+
+//bread filter
+  app.get('/getAllBread', (req, res)=>{
+    let db = app.get('db');
+    db.getAllBread().then((bread)=>{
+      res.status(200).send(bread);
+    });
+  });
+  app.get('/getHispanicBread', (req, res)=>{
+    let db = app.get('db');
+    db.getHispanicBread().then((bread)=>{
+      res.status(200).send(bread);
+    });
+  });
+  app.get('/getVietnameseBread', (req, res)=>{
+    let db = app.get('db');
+    db.getVietnameseBread().then((bread)=>{
+      res.status(200).send(bread);
+    });
+  });
+
+//sauces filter
+  app.get('/getAllSauces', (req, res)=>{
+    let db = app.get('db');
+    db.getAllSauces().then((sauces)=>{
+      res.status(200).send(sauces);
+    });
+  });
+  app.get('/getSweetSauces', (req, res)=>{
+    let db = app.get('db');
+    db.getSweetSauces().then((sauces)=>{
+      res.status(200).send(sauces);
+    });
+  });
+  app.get('/getClassicSauces', (req, res)=>{
+    let db = app.get('db');
+    db.getClassicSauces().then((sauces)=>{
+      res.status(200).send(sauces);
+    });
+  });
+
+//drinks filter
+app.get('/getAllDrinks', (req, res)=>{
+  let db = app.get('db');
+  db.getAllDrinks().then((drinks)=>{
+    res.status(200).send(drinks);
+  });
+});
+app.get('/getColdDrinks', (req, res)=>{
+  let db = app.get('db');
+  db.getColdDrinks().then((drinks)=>{
+    res.status(200).send(drinks);
+  });
+});
+app.get('/getHotDrinks', (req, res)=>{
+  let db = app.get('db');
+  db.getHotDrinks().then((drinks)=>{
+    res.status(200).send(drinks);
+  });
+});
+app.get('/getOtherDrinks', (req, res)=>{
+  let db = app.get('db');
+  db.getOtherDrinks().then((drinks)=>{
+    res.status(200).send(drinks);
+  });
+});
 
 //app will be able to use sessions.
 app.use(session({
-  secret:'mysupersecretsecret',
+  secret:'secret',
   resave: false,
   saveUninitialized: true
 }))
-
-
 
 
 //here starts the auth0 stuff.
@@ -35,36 +124,38 @@ passport.use(new Auth0Strategy({
   clientID: process.env.AUTH_CLIENT_ID,
   clientSecret: process.env.AUTH_CLIENT_SECRET,
   callbackURL: process.env.AUTH_CALLBACK
-}, function (accessToken, refreshToken, extraParams, profile, done){
-  console.log(profile);
+}, (accessToken, refreshToken, extraParams, profile, done)=>{
   done(null, profile)
 }));
+passport.serializeUser((user, done)=>{
+  done(null, user);
+});
+passport.deserializeUser((obj, done)=>{
+  console.log(obj)
+  console.log('test')
+  done(null, obj);
+});
 
 //run it twice so that the second time, it checks if the user was authenticated or not.
 app.get('/auth', passport.authenticate('auth0'));
 
 //redirect your user if it was successful or not.
 app.get('/auth/callback', passport.authenticate('auth0', {
-  successRedirect: 'http://localhost:3000/',
-  failureRedirect: 'http://localhost:3000/'
+  successRedirect: 'http://localhost:3000/Order',
+  failureRedirect: 'http://localhost:3000/About'
 }))
 
-passport.serializeUser(function(user, done){
-  done(null, user);
-});
-passport.deserializeUser(function(user, done){
-  done(null, obj);
-});
 
-app.get('/auth/me', (req, res, next)=>{
-  if (!req.user){
-    return res.status(404).send('User not found');
+app.get('/auth/me', (req, res)=>{
+  console.log(req.session.user)
+  if (!req.user) {
+    res.status(404).send('User not found');
   } else {
-    return res.status(200).send(req.user);
+    res.status(200).send(req.user);
   }
 })
 
-app.get('auth/logout', (req, res)=>{
+app.get('/auth/logout', (req, res)=>{
   req.logOut();
   return res.redirect(302, 'http://localhost:3000/')
 })

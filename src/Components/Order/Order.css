@@ -1,4 +1,6 @@
 .order_section {
-	width: 100%;
+	width: 110%;
 	height: 100vh;
+	background: url('../../Images/maps_section_background.jpg') no-repeat center center;
+	background-size: cover;
 }

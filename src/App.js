@@ -9,7 +9,7 @@ import Contact from './Components/Contact/Contact'
 import Menu from './Components/Menu/Menu'
 import Cafes from './Components/Cafes/Cafes'
 import Store from './Components/Store/Store'
-
+import ShoppingCart from './Components/ShoppingCart/ShoppingCart'
 
 class App extends Component {
   render() {
@@ -32,6 +32,7 @@ class App extends Component {
             <Route path='/Store' component={Store}/>
           </Switch>
         </container>
+        <ShoppingCart/>
       </section>
     );
   }

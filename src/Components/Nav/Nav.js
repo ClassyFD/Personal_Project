@@ -1,8 +1,9 @@
-import React, { Component } from 'react'
-import './Nav.css'
-import { Link } from 'react-router-dom'
-import { TimelineMax, Power4 } from 'gsap'
-import { connect } from 'react-redux'
+import React, { Component } from 'react';
+import './Nav.css';
+import axios from 'axios';
+import { Link } from 'react-router-dom';
+import { TimelineMax, Power4 } from 'gsap';
+import { connect } from 'react-redux';
 class Nav extends Component {
   componentDidMount(){
       let tl = new TimelineMax();
@@ -11,11 +12,8 @@ class Nav extends Component {
       document.getElementById(this.props.mountedComponent).classList.add('active')  
     },500)
     setTimeout(()=>{
-        console.log('hello')
         tl.to('#nav_section', 1, {marginLeft:'-320px'})
-      
     },500)
-
   }
   hoverNav(e){
     let tl = new TimelineMax();
@@ -53,7 +51,7 @@ class Nav extends Component {
       <section onMouseEnter={(e)=>{this.hoverNavSection()}} onMouseLeave={(e)=>{this.leaveNavSection(e)}} id='nav_section'>
         <nav className='nav hide_nav'>
           <Link onClick={(e)=>{this.clickNav(e)}} onMouseEnter={(e)=>{this.hoverNav(e)}} onMouseLeave={(e)=>{this.leaveNav(e)}} id='about_link' className='nav_link' to='/About'>About</Link>
-          <Link onClick={(e)=>{this.clickNav(e)}} onMouseEnter={(e)=>{this.hoverNav(e)}} onMouseLeave={(e)=>{this.leaveNav(e)}} id='order_link' className='nav_link' to='/Order'>Order Now</Link>
+          <Link onClick={(e)=>{this.clickNav(e)}} onMouseEnter={(e)=>{this.hoverNav(e)}} onMouseLeave={(e)=>{this.leaveNav(e)}} id='order_link' className='nav_link' to='/Order'>Checkout</Link>
           <Link onClick={(e)=>{this.clickNav(e)}} onMouseEnter={(e)=>{this.hoverNav(e)}} onMouseLeave={(e)=>{this.leaveNav(e)}} id='contact_link' className='nav_link' to='/Contact'>Contact</Link>
           <Link onClick={(e)=>{this.clickNav(e)}} onMouseEnter={(e)=>{this.hoverNav(e)}} onMouseLeave={(e)=>{this.leaveNav(e)}} id='menu_link' className='nav_link' to='/Menu'>Menu</Link>
           <Link onClick={(e)=>{this.clickNav(e)}} onMouseEnter={(e)=>{this.hoverNav(e)}} onMouseLeave={(e)=>{this.leaveNav(e)}} id='cafes_link' className='nav_link' to='/Cafes'>Cafes Near You</Link>
