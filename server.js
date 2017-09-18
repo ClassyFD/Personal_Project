@@ -3,18 +3,20 @@ require('dotenv').config();
 
 //setting all of your variables.
 const express = require('express'),
-      bodyParser = require('body-parser'),
-      cors = require('cors'),
-      port = 3001,
+bodyParser = require('body-parser'),
+cors = require('cors'),
+port = 3001,
       passport = require('passport'),
       Auth0Strategy = require('passport-auth0'),
       session = require('express-session'),
       massive = require('massive'),
-      app = express();
-
+      app = express(),
+      path = require('path');
+      
 //Middleware
 app.use(bodyParser.json());
 app.use(cors());
+app.use( express.static('./build') );
 
 massive({
   host: 'ec2-23-23-220-163.compute-1.amazonaws.com',
@@ -141,8 +143,8 @@ app.get('/auth', passport.authenticate('auth0'));
 
 //redirect your user if it was successful or not.
 app.get('/auth/callback', passport.authenticate('auth0', {
-  successRedirect: 'http://localhost:3000/Order',
-  failureRedirect: 'http://localhost:3000/About'
+  successRedirect: 'http://104.131.130.21/Order',
+  failureRedirect: 'http://104.131.130.21/About'
 }))
 
 
@@ -157,9 +159,12 @@ app.get('/auth/me', (req, res)=>{
 
 app.get('/auth/logout', (req, res)=>{
   req.logOut();
-  return res.redirect(302, 'http://localhost:3000/')
+  return res.redirect(302, 'http://104.131.130.21:3001')
 })
 
+app.get('/*', (req, res)=>{
+  res.sendFile(path.resolve(__dirname, '..','build','index.html'));
+});
 
 //listen to the ports.
 app.listen(port, ()=>console.log(`Listening on port: ${port}`))

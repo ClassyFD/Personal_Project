@@ -56,7 +56,7 @@ class Nav extends Component {
           <Link onClick={(e)=>{this.clickNav(e)}} onMouseEnter={(e)=>{this.hoverNav(e)}} onMouseLeave={(e)=>{this.leaveNav(e)}} id='menu_link' className='nav_link' to='/Menu'>Menu</Link>
           <Link onClick={(e)=>{this.clickNav(e)}} onMouseEnter={(e)=>{this.hoverNav(e)}} onMouseLeave={(e)=>{this.leaveNav(e)}} id='cafes_link' className='nav_link' to='/Cafes'>Cafes Near You</Link>
           <Link onClick={(e)=>{this.clickNav(e)}} onMouseEnter={(e)=>{this.hoverNav(e)}} onMouseLeave={(e)=>{this.leaveNav(e)}} id='store_link' className='nav_link' to='/Store'>Open a Store</Link>
-          <a onMouseEnter={(e)=>{this.hoverNav(e)}} onMouseLeave={(e)=>{this.leaveNav(e)}} className='a_tag' href='http://localhost:3001/auth'><button id='login_link' className='nav_link'>Log in</button></a>
+          <a onMouseEnter={(e)=>{this.hoverNav(e)}} onMouseLeave={(e)=>{this.leaveNav(e)}} className='a_tag' href={process.env.REACT_APP_LOGIN}><button id='login_link' className='nav_link'>Log in</button></a>
         </nav>
       </section>
     )
