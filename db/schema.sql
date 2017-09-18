@@ -106,17 +106,36 @@ CREATE TABLE drink_flavors
 (
   id SERIAL PRIMARY KEY,
   table_name VARCHAR(20),
-  name VARCHAR(50),
-  price VARCHAR(15)
+  chocolate VARCHAR(15),
+  vanilla VARCHAR(15),
+  strawberry VARCHAR(15),
+  raspberry VARCHAR(15),
+  blackberry VARCHAR(15),
+  cherry VARCHAR(15),
+  orange VARCHAR(15)
 );
 
-INSERT INTO drink_flavors (table_name, name, price) VALUES ('Drink_Flavors', 'Vanilla', '.39');
-INSERT INTO drink_flavors (table_name, name, price) VALUES ('Drink_Flavors', 'Chocolate', '.39');
-INSERT INTO drink_flavors (table_name, name, price) VALUES ('Drink_Flavors', 'Strawberry', '.39');
-INSERT INTO drink_flavors (table_name, name, price) VALUES ('Drink_Flavors', 'Blackberry', '.39');
-INSERT INTO drink_flavors (table_name, name, price) VALUES ('Drink_Flavors', 'Raspberry', '.39');
-INSERT INTO drink_flavors (table_name, name, price) VALUES ('Drink_Flavors', 'Orange', '.39');
-INSERT INTO drink_flavors (table_name, name, price) VALUES ('Drink_Flavors', 'Cherry', '.39');
+INSERT INTO drink_flavors (table_name, chocolate, vanilla, strawberry, raspberry, blackberry, cherry, orange) VALUES ('Drink_Flavors', 'available', 'available', 'available', 'available', 'available', 'available', 'available');
+INSERT INTO drink_flavors (table_name, chocolate, vanilla, strawberry, raspberry, blackberry, cherry, orange) VALUES ('Drink_Flavors', 'available', 'available', 'available', 'available', 'available', 'available', 'available');
+INSERT INTO drink_flavors (table_name, chocolate, vanilla, strawberry, raspberry, blackberry, cherry, orange) VALUES ('Drink_Flavors', 'available', 'unavailable', 'available', 'available', 'available', 'available', 'available');
+INSERT INTO drink_flavors (table_name, chocolate, vanilla, strawberry, raspberry, blackberry, cherry, orange) VALUES ('Drink_Flavors', 'available', 'available', 'unavailable', 'unavailable', 'unavailable', 'available', 'unavailable');
+INSERT INTO drink_flavors (table_name, chocolate, vanilla, strawberry, raspberry, blackberry, cherry, orange) VALUES ('Drink_Flavors', 'unavailable', 'unavailable', 'available', 'available', 'available', 'available', 'available');
+INSERT INTO drink_flavors (table_name, chocolate, vanilla, strawberry, raspberry, blackberry, cherry, orange) VALUES ('Drink_Flavors', 'available', 'available', 'unavailable', 'unavailable', 'unavailable', 'available', 'unavailable');
+INSERT INTO drink_flavors (table_name, chocolate, vanilla, strawberry, raspberry, blackberry, cherry, orange) VALUES ('Drink_Flavors', 'unavailable', 'unavailable', 'unavailable', 'unavailable', 'unavailable', 'unavailable', 'unavailable');
+INSERT INTO drink_flavors (table_name, chocolate, vanilla, strawberry, raspberry, blackberry, cherry, orange) VALUES ('Drink_Flavors', 'unavailable', 'unavailable', 'unavailable', 'unavailable', 'unavailable', 'unavailable', 'unavailable');
+INSERT INTO drink_flavors (table_name, chocolate, vanilla, strawberry, raspberry, blackberry, cherry, orange) VALUES ('Drink_Flavors', 'unavailable', 'unavailable', 'unavailable', 'unavailable', 'unavailable', 'unavailable', 'unavailable');
+INSERT INTO drink_flavors (table_name, chocolate, vanilla, strawberry, raspberry, blackberry, cherry, orange) VALUES ('Drink_Flavors', 'unavailable', 'unavailable', 'unavailable', 'unavailable', 'unavailable', 'unavailable', 'unavailable');
+INSERT INTO drink_flavors (table_name, chocolate, vanilla, strawberry, raspberry, blackberry, cherry, orange) VALUES ('Drink_Flavors', 'unavailable', 'unavailable', 'unavailable', 'unavailable', 'unavailable', 'unavailable', 'unavailable');
+INSERT INTO drink_flavors (table_name, chocolate, vanilla, strawberry, raspberry, blackberry, cherry, orange) VALUES ('Drink_Flavors', 'unavailable', 'unavailable', 'unavailable', 'unavailable', 'unavailable', 'unavailable', 'unavailable');
+INSERT INTO drink_flavors (table_name, chocolate, vanilla, strawberry, raspberry, blackberry, cherry, orange) VALUES ('Drink_Flavors', 'unavailable', 'unavailable', 'unavailable', 'unavailable', 'unavailable', 'unavailable', 'unavailable');
+INSERT INTO drink_flavors (table_name, chocolate, vanilla, strawberry, raspberry, blackberry, cherry, orange) VALUES ('Drink_Flavors', 'unavailable', 'unavailable', 'unavailable', 'unavailable', 'unavailable', 'unavailable', 'unavailable');
+INSERT INTO drink_flavors (table_name, chocolate, vanilla, strawberry, raspberry, blackberry, cherry, orange) VALUES ('Drink_Flavors', 'unavailable', 'unavailable', 'unavailable', 'unavailable', 'unavailable', 'unavailable', 'unavailable');
+INSERT INTO drink_flavors (table_name, chocolate, vanilla, strawberry, raspberry, blackberry, cherry, orange) VALUES ('Drink_Flavors', 'unavailable', 'unavailable', 'unavailable', 'unavailable', 'unavailable', 'unavailable', 'unavailable');
+INSERT INTO drink_flavors (table_name, chocolate, vanilla, strawberry, raspberry, blackberry, cherry, orange) VALUES ('Drink_Flavors', 'unavailable', 'unavailable', 'unavailable', 'unavailable', 'unavailable', 'unavailable', 'unavailable');
+INSERT INTO drink_flavors (table_name, chocolate, vanilla, strawberry, raspberry, blackberry, cherry, orange) VALUES ('Drink_Flavors', 'unavailable', 'unavailable', 'unavailable', 'unavailable', 'unavailable', 'unavailable', 'unavailable');
+INSERT INTO drink_flavors (table_name, chocolate, vanilla, strawberry, raspberry, blackberry, cherry, orange) VALUES ('Drink_Flavors', 'unavailable', 'unavailable', 'unavailable', 'unavailable', 'unavailable', 'unavailable', 'unavailable');
+INSERT INTO drink_flavors (table_name, chocolate, vanilla, strawberry, raspberry, blackberry, cherry, orange) VALUES ('Drink_Flavors', 'unavailable', 'unavailable', 'unavailable', 'unavailable', 'unavailable', 'unavailable', 'unavailable');
+
 
 CREATE TABLE drink_toppings
 (

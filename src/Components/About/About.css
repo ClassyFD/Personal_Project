@@ -3,7 +3,7 @@
 .about_section {
 	width: 110%;
 	height: 100vh;
-	background: url('../../Images/maps_section_background.jpg') no-repeat center center; 
+	background: url('../../Images/maps_section_background.jpg') no-repeat center center fixed; 
 	background-size: cover;
 }
 .component_nav_technologies, .component_nav_store_description {
@@ -86,7 +86,10 @@
 #Google_Maps_Api {
 	background: url('../../Images/Tech/Google_Maps.png');
 }
-#HTML, #CSS, #ES6, #Redux, #GSAP, #NodeJS, #Express, #Stripe, #Auth0, #Parallax, #Google_Maps_Api {
+#Photoshop {
+	background: url('../../Images/Tech/photoshop.png')
+}
+#HTML, #CSS, #ES6, #Redux, #GSAP, #NodeJS, #Express, #Stripe, #Auth0, #Parallax, #Google_Maps_Api, #Photoshop {
 	background-size: cover;
 	list-style: none;
 	height: 100px;

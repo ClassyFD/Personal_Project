@@ -1,4 +1,7 @@
 .shopping_cart_title_container {
+  font-weight: 600;
+	font-family: monospace;
+	font-size: 20px;
   width: 100px;
   height: 40px;
   background: rgba(69,4,4,1);
@@ -27,6 +30,9 @@
   opacity: .5;
 }
 .cart_container_title {
+  font-weight: 600;
+	font-family: monospace;
+	font-size: 18px;
   display: flex;
   justify-content: space-between;
   padding: 15px;

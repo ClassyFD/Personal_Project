@@ -14,11 +14,12 @@ export default class AboutTechnologies extends Component {
           <li id='Redux'/>
           <li id='GSAP'/>
           <li id='Parallax'/>
+          <li id='Stripe'/>
           <li id='NodeJS'/>
           <li id='Express'/>
-          <li id='Stripe'/>
           <li id='Auth0'/>
           <li id='Google_Maps_Api'/>
+          <li id='Photoshop'/>
         </container>
         <div className='separating_line' />
         <container className='technologies_title_container'>

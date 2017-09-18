@@ -26,7 +26,12 @@ class Cafes extends Component {
             <Container/>
         </container>
         <div className='cafe_near_you_list'> 
-          <h1 className='cafes_near_you_text_2'>The Cafes closest to you are:</h1>
+          <h1 className='cafes_near_you_text_2'>Cafes Near You</h1>
+          <div className='addresses_near_you'> 
+            <div> 570 S 700 W Provo, Utah </div>
+            <div> 2623 W 11625 S Riverton, Utah </div>
+            <div> 1095 S Main St Payson, Utah </div>
+          </div>
         </div>
       </section>
     )

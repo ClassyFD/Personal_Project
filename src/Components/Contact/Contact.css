@@ -1,11 +1,14 @@
 .contact_section {
 	width: 110%;
 	height: 100vh;
-	background: url('../../Images/maps_section_background.jpg') no-repeat center center;
+	background: url('../../Images/maps_section_background.jpg') no-repeat center center fixed;
 	background-size: cover;
 
 }
 .contact_form_section {
+	font-weight: 600;
+	font-family: monospace;
+	font-size: 20px;
 	margin: 50px auto;
 	max-width: 60vw;
 	background: #333333;
@@ -62,7 +65,7 @@
 	align-items: center;
 	font-size: 13px;
 	font-family: 'Acme', sans-serif;
-	text-shadow: 1px 1px 1px white, -1px -1px 3px white;
+	text-shadow: 1px 1px 1px white, 0px 0px 1px white;
 	list-style: none;
 	width: 200px;
 	height: 100px;

@@ -1,7 +1,7 @@
 .menu_section {
 	width: 110%;
 	height: 100vh;
-	background: url('../../Images/maps_section_background.jpg') no-repeat center center;
+	background: url('../../Images/maps_section_background.jpg') no-repeat center center fixed;
 	background-size: cover;
 	overflow-y: scroll;
 	overflow-x: hidden;
@@ -39,6 +39,9 @@
 	align-items: center;
 }
 .info_sandwich_container, .info_sides_container, .info_drinks_container, .info_bread_container, .info_sauces_container {
+	font-weight: 600;
+	font-family: monospace;
+	font-size: 15px;
 	display: flex;
 	flex-direction: column;
 	margin: 0 auto;
@@ -66,6 +69,9 @@
 	flex-direction: column;
 }
 .food_nav_options li{
+	font-weight: 600;
+	font-family: monospace;
+	font-size: 17px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -300,5 +306,5 @@
 #Drinks_1, #Drinks_2, #Drinks_3, #Drinks_4, #Drinks_5, #Drinks_6, #Drinks_7, #Drinks_8, #Drinks_9, #Drinks_10, #Drinks_19, #Drinks_17, #Drinks_16, #Drinks_15, #Drinks_18, #Drinks_20 {
 	background-size: cover;
 	height: 115px;
-	width: 70px;
+	width: 75px;
 }
