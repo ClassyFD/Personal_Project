@@ -20,5 +20,5 @@ class Container extends Component{
   }
 }
 export default GoogleApiComponent({
-  apiKey: 'AIzaSyAoNKptx2xp-KTzOzEaSNAYpgRERL2dvjY'
+  apiKey: process.env.REACT_APP_GOOGLE_KEY
 })(Container)

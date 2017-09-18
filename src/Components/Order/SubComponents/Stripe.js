@@ -30,7 +30,7 @@ class TakeMoney extends Component {
         currency="USD"
         amount={this.calculateMoney()}
         token={this.onToken}
-        stripeKey="pk_test_7nwYJJLfPnxw8DcSvFkribWJ"
+        stripeKey={process.env.REACT_APP_STRIPE_KEY}
         billingAddress={true}
         closed={this.props.onClosed}
       />
