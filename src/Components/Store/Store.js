@@ -21,6 +21,8 @@ class Store extends Component {
           <div onClick={(e)=>{this.backUp()}} className='deliwin_image'/>
           <h1 className='component_nav_text'>Open a store </h1>
         </nav>
+        <div className='under_construction'>
+        </div>
       </section>
     )
   }

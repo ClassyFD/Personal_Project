@@ -308,3 +308,78 @@
 	height: 115px;
 	width: 75px;
 }
+#Sauces_1 {
+	background: url('../../Images/Sauces/chocolate.png') no-repeat center center;
+}
+#Sauces_2 {
+	background: url('../../Images/Sauces/vanilla.png') no-repeat center center;
+}
+#Sauces_3 {
+	background: url('../../Images/Sauces/peanut_butter.png') no-repeat center center;
+}
+#Sauces_4 {
+	background: url('../../Images/Sauces/strawberry.png') no-repeat center center;
+}
+#Sauces_5 {
+	background: url('../../Images/Sauces/blackberry.png') no-repeat center center;
+}
+#Sauces_6 {
+	background: url('../../Images/Sauces/blueberry.png') no-repeat center center;
+}
+#Sauces_7 {
+	background: url('../../Images/Sauces/raspberry.png') no-repeat center center;
+}
+#Sauces_8 {
+	background: url('../../Images/Sauces/cherry.png') no-repeat center center;
+}
+#Sauces_9 {
+	background: url('../../Images/Sauces/hot_fudge.png') no-repeat center center;
+}
+#Sauces_10 {
+	background: url('../../Images/Sauces/caramel.png') no-repeat center center;
+}
+#Sauces_11 {
+	background: url('../../Images/Sauces/ketchup.png') no-repeat center center;
+}
+#Sauces_12 {
+	background: url('../../Images/Sauces/mustard.png') no-repeat center center;
+}
+#Sauces_13 {
+	background: url('../../Images/Sauces/mayo.png') no-repeat center center;
+}
+#Sauces_14 {
+	background: url('../../Images/Sauces/ranch.png') no-repeat center center;
+}
+#Sauces_15 {
+	background: url('../../Images/Sauces/bbq.png') no-repeat center center;
+}
+#Sauces_16 {
+	background: url('../../Images/Sauces/buffalo.png') no-repeat center center;
+}
+#Sauces_17 {
+	background: url('../../Images/Sauces/honey_mustard.png') no-repeat center center;
+}
+#Sauces_18 {
+	background: url('../../Images/Sauces/sweet_and_spicy.png') no-repeat center center;
+}
+#Sauces_19 {
+	background: url('../../Images/Sauces/sweet_and_sour.png') no-repeat center center;
+}
+#Sauces_20 {
+	background: url('../../Images/Sauces/garlic.png') no-repeat center center;
+}
+#Sauces_1, #Sauces_2, #Sauces_3, #Sauces_4, #Sauces_5, #Sauces_6, #Sauces_7, #Sauces_8 {
+	width: 100px;
+	height: 100px;
+	background-size: cover;
+}
+#Sauces_9, #Sauces_10 {
+	width:65px;
+	height: 150px;
+	background-size: cover;
+}
+#Sauces_11, #Sauces_12, #Sauces_13, #Sauces_14, #Sauces_15, #Sauces_16, #Sauces_17, #Sauces_18, #Sauces_19, #Sauces_20 {
+	width: 50px;
+	height: 100px;
+	background-size: cover;
+}

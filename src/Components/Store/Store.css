@@ -4,3 +4,10 @@
 	background: url('../../Images/maps_section_background.jpg') no-repeat center center fixed;
 	background-size: cover;
 }
+.under_construction {
+	height:  500px;
+	width: 500px;
+	margin: 0 auto;
+	background: url('../../Images/under_construction.png') no-repeat center center;
+	background-size: cover;
+}
