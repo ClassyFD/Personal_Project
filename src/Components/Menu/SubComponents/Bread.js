@@ -29,7 +29,7 @@ class Bread extends Component {
     let filter = this.props.sortedBread === 'hispanicBread'?
     'Hispanic' : this.props.sortedBread === 'vietnameseBread'?
     'Vietnamese' : 'All';
-    axios.get('http://localhost:3001/get'+filter+'Bread').then((res)=>{
+    axios.get(process.env.REACT_APP_DEFAULT+'/get'+filter+'Bread').then((res)=>{
       let mapped = res.data.map((key)=>{
         return (
           <container className='bread_container'>

@@ -29,7 +29,7 @@ class Sauces extends Component {
     let filter = this.props.sortedSauces === 'sweetSauces'?
     'Sweet' : this.props.sortedSauces === 'classicSauces'?
     'Classic' : 'All';
-    axios.get('http://localhost:3001/get'+filter+'Sauces').then((res)=>{
+    axios.get(process.env.REACT_APP_DEFAULT+'/get'+filter+'Sauces').then((res)=>{
       let mapped = res.data.map((key)=>{
         return (
           <container className='sauces_container'>

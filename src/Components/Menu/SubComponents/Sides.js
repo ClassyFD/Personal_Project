@@ -26,7 +26,7 @@ class Sides extends Component {
     })
   }
   componentWillReceiveProps() {
-    axios.get('http://localhost:3001/getSides').then((res)=>{
+    axios.get(process.env.REACT_APP_DEFAULT+'/getSides').then((res)=>{
       let mapped = res.data.map((key)=>{
         return (
           <container className='sides_container'>

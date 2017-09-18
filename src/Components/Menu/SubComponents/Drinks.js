@@ -30,7 +30,7 @@ class Drinks extends Component {
     'Cold' : this.props.sortedDrinks === 'hotDrinks'? 
     'Hot' : this.props.sortedDrinks === 'otherDrinks'? 
     'Other' : 'All';
-    axios.get('http://localhost:3001/get'+filter+'Drinks').then((res)=>{
+    axios.get(process.env.REACT_APP_DEFAULT+'/get'+filter+'Drinks').then((res)=>{
       console.log(res.data)
       let mapped = res.data.map((key)=>{
         return (

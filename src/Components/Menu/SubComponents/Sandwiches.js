@@ -26,7 +26,7 @@ class Sandwiches extends Component {
     })
   }
   componentWillReceiveProps(){
-    axios.get('http://localhost:3001/getSandwiches').then((res)=>{
+    axios.get(process.env.REACT_APP_DEFAULT+'/getSandwiches').then((res)=>{
       let mapped = res.data.map((key)=>{
         return (
           <container className='sandwiches_container'>
